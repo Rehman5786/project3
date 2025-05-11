@@ -1,0 +1,167 @@
+.manager-dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.dashboard-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.assign-task-section, .leave-requests-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-type-toggle {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.task-type-toggle button {
+  flex: 1;
+  padding: 0.8rem;
+  border: none;
+  background: #f0f0f0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.task-type-toggle button.active {
+  background: var(--primary-color);
+  color: white;
+}
+
+.task-type-toggle button:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.task-type-toggle button:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.attendees-list {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.attendee-item {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.attendee-item input {
+  margin-right: 0.5rem;
+}
+
+.assign-button {
+  padding: 0.8rem 1.5rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 1rem;
+}
+
+.assign-button:hover {
+  background: var(--secondary-color);
+}
+
+.leave-requests-list {
+  margin-top: 1rem;
+}
+
+.leave-request {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.leave-info h3 {
+  margin-bottom: 0.5rem;
+  color: var(--dark-color);
+}
+
+.leave-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.approve-btn {
+  background: var(--success-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reject-btn {
+  background: var(--danger-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.status-pending {
+  color: #f39c12;
+}
+
+.status-approved {
+  color: var(--success-color);
+}
+
+.status-rejected {
+  color: var(--danger-color);
+}
+
+.logout-button {
+  padding: 0.8rem 1.5rem;
+  background-color: var(--danger-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-button :hover{
+  background-color: #c0392b;
+}

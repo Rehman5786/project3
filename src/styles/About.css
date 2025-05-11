@@ -1,0 +1,85 @@
+.about-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-container h1 {
+  text-align: center;
+  color: var(--dark-color);
+  margin-bottom: 2rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-section {
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 6px;
+}
+
+.about-section h2 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+}
+
+.features-list {
+  list-style-type: none;
+}
+
+.features-list li {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.features-list li::before {
+  content: "✓";
+  color: var(--success-color);
+  position: absolute;
+  left: 0;
+}
+
+.team-members {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  transition: background-color 0.3s;
+}
+
+.team-member {
+  flex: 1;
+  min-width: 200px;
+  padding: 1rem;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s;
+}
+
+.team-member h3 {
+  color: var(--dark-color);
+}
+
+.team-member p {
+  color: #666;
+  font-style: italic;
+}
+:hover{
+    animation:reverse;
+}
+
+.team-members :hover{
+  display: flex;
+  background-color: aqua;
+  flex-wrap: wrap;
+}
